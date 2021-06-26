@@ -95,10 +95,5 @@ with open(file_to_load) as election_data:
         #Save the winning candidate's results to the text file.
         txt_file.write(winning_candidate_summary)
 
-#continue from 3.6.1
 
-#2. The total number of votes cast.
-#3. A complete list of candidates who received votes.
-#4. The percentage of votes each candidate won.
-#5. The total number of votes each candidate won.
-#6. The winner of the election based on popular vote
+
