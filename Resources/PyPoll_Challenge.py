@@ -26,7 +26,7 @@ candidate_options = []
 candidate_votes = {}
 
 # 1: Create a county list and county votes dictionary.
-counties = []
+county_list = []
 county_votes = {}
 
 # Track the winning candidate, vote count and percentage
@@ -74,10 +74,10 @@ with open(file_to_load) as election_data:
 
         # 4a: Write an if statement that checks that the
         # county does not match any existing county in the county list.
-        if county_name not in counties:
+        if county_name not in county_list:
 
             # 4b: Add the existing county to the list of counties.
-            counties.append(county_name)
+            county_list.append(county_name)
 
             # 4c: Begin tracking the county's vote count.
             county_votes[county_name]=0
@@ -99,11 +99,12 @@ with open(file_to_save, "w") as txt_file:
     )
 
     print(election_results, end="")
-
+    
+    #Save the final vote count to a text file.
     txt_file.write(election_results)
 
     # 6a: Write a for loop to get the county from the county dictionary.
-    for county in counties:
+    for county in county_list:
 
         # 6b: Retrieve the county vote count.
         county_vote = county_votes.get(county)
@@ -112,7 +113,7 @@ with open(file_to_save, "w") as txt_file:
         county_vote_percentage = float(county_vote) / float(total_votes) * 100
 
          # 6d: Print the county results to the terminal.    
-        county_results = f'{county}: {county_vote_percentage:.1f}% ({total_votes:,})\n'
+        county_results = f'{county}: {county_vote_percentage:.1f}% ({county_vote:,})\n'
          
         print(county_results)
          
