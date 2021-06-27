@@ -21,12 +21,12 @@ By Using Python and analyzing the CSV data set provided, we were able to code ca
 
 * **There were "369,711" votes cast in the election.**
 
-* **Counties in the election & their vote breakdown:**
-  * Jefferson county with 38,855 votes (10.5%)
-  * Denver county with 306.055 votes (82.8%)
-  * Arapahoe with 24,801 votes (6.7%
+* **Counties in the election & their voter turnout breakdown:**
+  * **Jefferson county** with 38,855 votes (10.5%)
+  * **Denver county** with 306.055 votes (82.8%)
+  * **Arapahoe with** with 24,801 votes (6.7%)
 
-* **Denver county had the largest number of votes with 306,005 votes, at 82.8% of the total votes cast.**
+* **Denver county had the largest voter turnout with 306,005 votes, at 82.8% of the total votes cast.**
 
 Please see below for the code format that helped us analyze this data:
 
@@ -44,12 +44,12 @@ Please see below for the code format that helped us analyze this data:
 
 **After we processed the data, the results of the election were:**
  
-  * Charles Casper Stockham received 23.0% of the vote and 85,213 votes.
-  * Diana Degette received 73.8% of the vote and 272,892 votes.
-  * Raymon ANthony Doane received 3.1% of the vote and 11,606 votes.
+  * **Charles Casper Stockham** received 23.0% of the vote and 85,213 votes.
+  * **Diana Degette received** 73.8% of the vote and 272,892 votes.
+  * **Raymon Anthony Doane** received 3.1% of the vote and 11,606 votes.
    
 **The winner of the election was:**
-  * Diana Degette, who received "73.8%" of the vote and "272,892" votes.
+  * **Diana Degette**, who received "73.8%" of the vote and "272,892" votes.
 
 Our code below enabled us to total the votes for each candidate from each count to help us determine the winner:
  
